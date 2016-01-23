@@ -1,4 +1,4 @@
-Red Alert 2 CSF language convert.
+* `Red Alert 2` CSF language convert.
 
 javaversion:
   use:
