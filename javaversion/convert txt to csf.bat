@@ -1,5 +1,6 @@
 @echo off
 
+java txttocsf ra2.csf.txt ra2.csf
 java txttocsf ra2md.csf.txt ra2md.csf
 
 java txttocsf stringtable00.csf.txt stringtable00.csf

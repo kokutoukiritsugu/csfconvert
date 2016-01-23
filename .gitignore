@@ -1,3 +1,4 @@
 *.csf
 *.class
-*.ini
+*.csf.ini
+*.csf.txt
