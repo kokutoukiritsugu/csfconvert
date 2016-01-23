@@ -1,9 +1,9 @@
-`Red Alert 2` CSF language convert.
+# Red Alert 2 CSF language convert.
 
 
-+ java version:
+## java version:
 
-Usage:
+### Usage:
 
 javac csftotxt
 
@@ -13,9 +13,9 @@ javac txttocsf
 
 java txttocsf txtFilename csfFilename
 
-+ python version:
+## python version:
 
-Usage:
+### Usage:
 
 python csftoini csfFilename iniFilename
 
