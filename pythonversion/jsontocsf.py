@@ -3,7 +3,7 @@ import sys
 import struct
 import json
 
-print("Red Alert 2 CSF language converter")
+print("Red Alert 2 CSF language file converter")
 print("by kokutoukiritsugu")
 print()
 

@@ -1,4 +1,4 @@
-# Red Alert 2 CSF language converter
+# Red Alert 2 CSF language file converter
 
 by kokutoukiritsugu
 
