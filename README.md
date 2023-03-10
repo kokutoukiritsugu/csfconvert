@@ -1,22 +1,26 @@
-# Red Alert 2 CSF language convert.
+# Red Alert 2 CSF language converter
 
+by kokutoukiritsugu
 
-## java version:
+## python version(recommend):
 
-### Usage:
+#### Run:
 
-javac csftotxt
+`python csftojosn.py csfFilename jsonFilename`
 
-java csftotxt csfFilename txtFilename
+`python jsontocsf.py jsonFilename csfFilename`
 
-javac txttocsf
+## java version (not recommend):
 
-java txttocsf txtFilename csfFilename
+#### compile:
 
-## python version:
+`javac csftotxt`
 
-### Usage:
+`javac txttocsf`
 
-python csftoini csfFilename iniFilename
+#### run:
 
-python initocsf (not complete.)
+`java csftotxt csfFilename txtFilename`
+
+`java txttocsf txtFilename csfFilename`
+
