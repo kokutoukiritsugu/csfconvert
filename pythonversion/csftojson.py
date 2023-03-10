@@ -7,12 +7,12 @@ print("Red Alert 2 CSF language file converter")
 print("by kokutoukiritsugu")
 print()
 
+print("usage: %s csfFilename jsonFilename" % sys.argv[0])
+print()
+
 if len(sys.argv) != 3:
     print("error: argument not right!")
-    exit()
-
-print("usage: python csftojosn.py csfFilename jsonFilename")
-print()
+    sys.exit()
 
 print("input: %s" % sys.argv[1])
 print("output: %s" % sys.argv[2])
