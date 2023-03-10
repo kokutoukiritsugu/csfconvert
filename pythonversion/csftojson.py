@@ -1,10 +1,24 @@
 # -*- coding: UTF-8 -*-
+import sys
 import struct
 import json
 
-CSF = "ra2.csf"
-CSF2 = "ra2_out.csf"
-jCSF = "ra2.json"
+print("Red Alert 2 CSF language converter")
+print("by kokutoukiritsugu")
+print()
+
+if len(sys.argv) != 3:
+    print("error: argument not right!")
+    exit()
+
+print("usage: python csftojosn.py csfFilename jsonFilename")
+print()
+
+print("input: %s" % sys.argv[1])
+print("output: %s" % sys.argv[2])
+
+CSF1 = sys.argv[1]
+jCSF = sys.argv[2]
 
 encoding_outfile = 'utf-8'
 encoding_CSF_str = 'utf-16le'
@@ -13,7 +27,7 @@ sHead_CSF_Converter = 'head_csf_converter'
 
 dCSF = {}
 
-with open(CSF, mode='rb') as fCSF:
+with open(CSF1, mode='rb') as fCSF:
     bHeadCSF, i1, iStringCount1, iStringCount2, i2, i3 = struct.unpack("<4sLLLLL", fCSF.read(24))
     sHeadCSF = bHeadCSF.decode("ascii")
 
