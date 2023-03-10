@@ -59,7 +59,7 @@ with open(CSF2, 'wb') as fCSF:
             for b in bString1Value:
                 bString1ValueRaw = bString1ValueRaw + (b ^ 0xff).to_bytes(1, "little")
             iString1ValueLength = len(bString1ValueRaw)
-            iString1ValueLengthRaw = int(iString1ValueLength / 2)
+            iString1ValueLengthRaw = iString1ValueLength // 2
             sStringType = dCSF[sStringKey]["StringType"]
             p = struct.pack("<4sL%ds" % iString1ValueLength, bytes(sStringType, encoding='ascii'), iString1ValueLengthRaw, bString1ValueRaw)
             fCSF.write(p)
