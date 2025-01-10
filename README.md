@@ -1,26 +1,8 @@
 # Red Alert 2 CSF language file converter
 
-by kokutoukiritsugu
+```pip3 install openpyxl```
 
-## python version(recommend):
+Convert CSF to XLSX: ```python3 csf_converter.py csf2xlsx csfFilename xlsxFilename```
 
-#### Run:
-
-`python csftojosn.py csfFilename jsonFilename`
-
-`python jsontocsf.py jsonFilename csfFilename`
-
-## java version (not recommend):
-
-#### compile:
-
-`javac csftotxt`
-
-`javac txttocsf`
-
-#### run:
-
-`java csftotxt csfFilename txtFilename`
-
-`java txttocsf txtFilename csfFilename`
+Convert XLSX to CSF: ```python3 csf_converter.py xlsx2csf xlsxFilename csfFilename```
 

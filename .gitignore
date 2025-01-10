@@ -1,11 +1,2 @@
 *.csf
-*.class
-*.csf.ini
-*.csf.txt
-*.json
-
-*.build
-*.dist
-*.onefile-build
-
-*.exe
+*.xlsx
